@@ -276,8 +276,32 @@ def add_zero_adj_matrix(adj_matrix, ratio = 1.1):
   matrix_new[0:L_upper, 0:L_lower]  = np.array(adj_matrix)
   print(f'New Adj matrix: {matrix_new.shape} ')
   return matrix_new
-########################### Main Function  ###########################
+########################### Bipartite Statistics Function  ###########################
+def bipartite_stats(bottom_nodes, upper_nodes, B):
+  # main Vairbles
+  num_edges = len(B.edges)
 
+  #Statistics
+  top_average = num_edges / upper_nodes
+  bottom_average = num_edges / bottom_nodes
+  graph_average  = (2*num_edges) / (top_average + bottom_average)
+  density = num_edges / (bottom_nodes * upper_nodes)
+
+  sparsity = num_edges / (bottom_nodes + upper_nodes)**2
+
+  # Prepare data for tabulation
+  table_data = [
+      ['# Top Nodes', bottom_nodes],
+      ['# Bottom Nodes', upper_nodes],
+      ['# Edges', num_edges],
+      ['Top average degree ', round(top_average, 4)],
+      ['Bottom Average degree', round(bottom_average, 4)],
+      ['Graph Average degree', round(graph_average, 4)],
+      ['Density', round(density, 4)],
+      ['Sparsity', round(sparsity, 4)]
+  ]
+  print(tabulate(table_data, headers=['Metric', 'Value'], tablefmt='grid'))
+########################### Main Function  ###########################
 def simulations(args, add_zeros = False, simulation_plots = False ):
   rng_key, rng_key_predict = random_jx.split(random_jx.PRNGKey(22)) # ???
   Bipartite_graph_predictive = Predictive(Bibartite_netwokr, num_samples = args["batch_size"])
