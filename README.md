@@ -9,10 +9,10 @@ The main objective of this repository is to simulate a bipartite network from th
 **Variables**
 The following variables are given as input parameters for the simulation:
 
-L: Number of nodes in one set of the bipartite graph.
-L_hat: Number of nodes in the other set of the bipartite graph.
-p: Number of communities.
-alpha: Parameter influencing the community structure in the graph.
+-L: Number of nodes in one set of the bipartite graph.
+-L_hat: Number of nodes in the other set of the bipartite graph.
+-p: Number of communities.
+-alpha: Parameter influencing the community structure in the graph.
 alpha_hat: Modified parameter for community structure.
 sigma: A parameter related to the edge probabilities.
 sigma_hat: Modified parameter for edge probabilities.
