@@ -7,10 +7,10 @@ This repository simulates a bipartite network based on the et-BFRY model.
 The main objective of this repository is to simulate a bipartite network from the et-BFRY, leveraging various input parameters. It calculates the necessary scores and adjacency matrix based on a Bernoulli distribution.
 
 **Variables**
-The following variables are given as input parameters for the simulation:
+The following variables are given as input parameters for the simulation:\
 
--L: Number of nodes in one set of the bipartite graph.
--L_hat: Number of nodes in the other set of the bipartite graph.
+* L: Number of nodes in one set of the bipartite graph.
+* L_hat: Number of nodes in the other set of the bipartite graph.
 -p: Number of communities.
 -alpha: Parameter influencing the community structure in the graph.
 alpha_hat: Modified parameter for community structure.
