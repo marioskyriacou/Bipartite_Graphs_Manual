@@ -28,3 +28,9 @@ The repository implements the following calculations based on the provided input
 * Wio: Weight matrix for the first set of nodes.
 * Wj0: Weight matrix for the second set of nodes.
 *Adjacency Matrix: The adjacency matrix is calculated based on a given Bernoulli distribution, representing the connection probabilities between the two sets of nodes.
+
+<sub>pip install numpy scipy
+pip install numpyro
+pip install funsor </sub>
+
+
