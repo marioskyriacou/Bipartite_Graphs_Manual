@@ -71,4 +71,8 @@ Using MCMC sampling, the following parameters will be inferred:
 * Wio: Weight matrix for the first set of nodes.
 * Wj0: Weight matrix for the second set of nodes.
 
-
+# File Guides
+* ```Bipartite_Network.ipynb```: The first trial of simulate and inference bipartite networks
+* ```Simulation Functions.py```, ```Simulations Main.py```, ```Inference Network Function.py``` and ```inference netrok main.py``` are thi main .py files that create the classes for automation of inference and simulation of a bipartite network
+* ```Simulate_Inference_Bipartite_Network_Classes.ipynb``` Uses Classes ONLY for simulating and Infering Bipartite Networks
+  
